@@ -4,199 +4,265 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,700|Poppins:300,300i,400,400i,700,700i|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,400,500,600,700|Open+Sans:300,400,600&amp;subset=cyrillic-ext" rel="stylesheet">
 
 
 		<link rel="stylesheet" type="text/css" href="fonts/font-face.css" />
     <link rel="stylesheet" type="text/css" href="styles/all.css" />
-		<script src="scripts/main.min.js"></script>
-		<title>SiteName</title>
+		<!-- <script src="scripts/main.min.js"></script> -->
+		<title>I Am woman</title>
 </head>
 <body>
   <div id="wrapper">
       <header id="header">
-        <div class="layout">
-          <div class="top-header">
-            <div class="menu-button">
-
+        <div class="menu">
+          <div class="left-menu">
+            <div class="menu-button" onclick="menuShowHide()">
+              <span class="top"></span>
+              <span class="middle"></span>
+              <span class="bottom"></span>
             </div>
-            <h1 class="logo">
-              <a href="#">I am woman</a>
-            </h1>
-            <ul class="menu-items">
-              <span class="link search"></span>
-              <span class="link avatar"></span>
-              <span class="link bag"></span>
+            <p>Распродажа<span>SS’18</span></p>
+            <span class="line"></span>
+          </div>
+          <div class="catalog">
+            <p>Каталог</p>
+            <ul>
+              <li class="link">Пальто</li>
+              <li class="link">Жилеты и жакеты</li>
+              <li class="link">Костюмы</li>
+              <li class="link">Трикотаж</li>
+              <li class="link">Платья</li>
+              <li class="link">Блузы и топы</li>
+              <li class="link">Футболки</li>
+              <li class="link">Юбки и брюки</li>
+              <li class="link">Аксессуары</li>
             </ul>
           </div>
-          <div class="menu">
-            <div class="catalog">
-              <p>Каталог</p>
-              <ul>
-                <li class="link">Пальто</li>
-                <li class="link">Жилеты и жакеты</li>
-                <li class="link">Костюмы</li>
-                <li class="link">Трикотаж</li>
-                <li class="link">Платья</li>
-                <li class="link">Блузы и топы</li>
-                <li class="link">Футболки</li>
-                <li class="link">Юбки и брюки</li>
-                <li class="link">Аксессуары</li>
-              </ul>
-            </div>
-            <div class="about-brand">
-              <p class="about">О бренде</p>
-              <ul>
-                <li class="link">Оферта</li>
-                <li class="link">Оплата и доставка</li>
-                <li class="link">Возврат</li>
-                <li class="link">Контакты</li>
-              </ul>
-            </div>
-            <ul class="links">
-              <li class="link">Sale</li>
-              <li class="link">New</li>
-              <li class="link">Looks</li>
-              <li class="link">Блог</li>
-              <li class="link">Streetstyle</li>
+          <div class="about-brand">
+            <p class="about">О бренде</p>
+            <ul>
+              <li class="link">Оферта</li>
+              <li class="link">Оплата и доставка</li>
+              <li class="link">Возврат</li>
+              <li class="link">Контакты</li>
             </ul>
-            <div class="personal">
-              <form class="search" action="index.html" method="post">
-                <input type="text" name="search" placeholder="Найти на сайте">
-              </form>
-              <span class="link cabinet">Войти в личный кабинет</span>
-              <span class="feedback">Отзывы</span>
-            </div>
           </div>
-          <h3>Новая круизная коллекция '19</h3>
-          <span class="link goto-catalog">Перейти в каталог</span>
-          <ul class="social">
-            <li class="link fb">Facebook</li>
-            <li class="link yt">Youtube</li>
-            <li class="link vk">Vkontakte</li>
+          <ul class="links">
+            <li class="link">Sale</li>
+            <li class="link">New</li>
+            <li class="link">Looks</li>
+            <li class="link">Блог</li>
+            <li class="link">Streetstyle</li>
           </ul>
-          <div class="slider">
-            <div class="slide1">
-              <p>Хлопковое платье в полоску</p>
-              <p class="price">9 900 рублей</p>
-              <img src="./images/img_new-collect_product1_d.jpg" alt="Хлопковое платье в полоску">
-              <div class="nav">
-                <span class="prev"></span>
-                <span class="current-slide"></span>
-                <span>/</span>
-                <span class="total-slides"></span>
-                <span class="link see-all">Смотреть все</span>
+          <div class="personal">
+            <form class="search" action="index.html" method="post">
+              <input type="text" name="search" placeholder="Найти на сайте">
+            </form>
+            <span class="link cabinet">Войти в личный кабинет</span>
+            <span class="link feedback">Отзывы</span>
+          </div>
+          <div class="close-menu" onclick="menuShowHide()"></div>
+        </div>
+        <div class="header-content">
+          <div class="left-menu">
+            <div class="menu-button" onclick="menuShowHide()">
+              <span class="top"></span>
+              <span class="middle"></span>
+              <span class="bottom"></span>
+            </div>
+            <p>Распродажа<span>SS’18</span></p>
+            <span class="line"></span>
+          </div>
+          <div class="wrap">
+            <div class="top-header">
+              <h1 class="logo">
+                <a href="#">I am woman</a>
+              </h1>
+              <ul class="menu-items">
+                <li class="link search"></li>
+                <li class="link avatar"></li>
+                <li class="link bag"></li>
+              </ul>
+            </div>
+            <div class="wrap2">
+              <div class="description">
+                <h3>Новая <br> круизная коллекция '19</h3>
+                <span class="link goto-catalog">Перейти в каталог</span>
+                <span class="shadow">19</span>
+              </div>
+              <div class="slider">
+                <div class="slide slide1">
+                  <div class="bg"></div>
+                  <div class="item-desc">
+                    <p class="link">Хлопковое платье в полоску</p>
+                    <p class="price">9 900 рублей</p>
+                    <span class="line"></span>
+                  </div>
+                  <img src="./images/img_new-collect_product1_d.jpg" alt="Хлопковое платье в полоску">
+                </div>
+                <div class="slide slide2">
+                  <div class="bg"></div>
+                  <div class="item-desc">
+                    <p class="link">Спортивный желтый костюм</p>
+                    <p class="price">9 900 рублей</p>
+                    <span class="line"></span>
+                  </div>
+                  <img src="./images/img_new-collect_product2_d.jpg" alt="Спортивный желтый костюм">
+                </div>
+                <div class="slide slide3">
+                  <div class="bg"></div>
+                  <div class="item-desc">
+                    <p class="link">Платье — халат со стразами</p>
+                    <p class="price">9 900 рублей</p>
+                    <span class="line"></span>
+                  </div>
+                  <img src="./images/img_new-collect_product3_d.jpg" alt="Платье — халат со стразами">
+                </div>
+                <div class="nav">
+                  <div class="wrap">
+                    <span class="prev"></span>
+                    <span class="current-slide">01</span>
+                    <span class="separator">/</span>
+                    <span class="total-slides"></span>
+                    <span class="next"></span>
+                  </div>
+                    <span class="link see-all">Смотреть все</span>
+                  </div>
               </div>
             </div>
-            <div class="slide2">
-              <p>Спортивный желтый костюм</p>
-              <p class="price">9 900 рублей</p>
-              <img src="./images/img_new-collect_product2_d.jpg" alt="Спортивный желтый костюм">
-              <div class="nav">
-                <span class="prev"></span>
-                <span class="current-slide"></span>
-                <span>/</span>
-                <span class="total-slides"></span>
-                <span class="link see-all">Смотреть все</span>
-              </div>
-            </div>
-            <div class="slide3">
-              <p>Платье — халат со стразами</p>
-              <p class="price">9 900 рублей</p>
-              <img src="./images/img_new-collect_product3_d.jpg" alt="Платье — халат со стразами">
-              <div class="nav">
-                <span class="prev"></span>
-                <span class="current-slide"></span>
-                <span>/</span>
-                <span class="total-slides"></span>
-                <span class="link see-all">Смотреть все</span>
-              </div>
-            </div>
+            <ul class="social">
+                <li class="link fb">Facebook</li>
+                <li class="link yt">Youtube</li>
+                <li class="link vk">Vkontakte</li>
+              </ul>
+          </div>
+          <div class="right-nav">
+            <span class="link page1">01</span>
+            <span class="line"></span>
+            <span class="link page1">02</span>
+            <span class="link page1">04</span>
+            <span class="link page1">05</span>
+            <span class="link page1">06</span>
           </div>
         </div>
       </header>
       <main id="main">
-        <div class="layout">
-          <div class="new-arrival">
-            <h2>Новое  поступление</h2>
-            <ul>
-              <li class="link dresses">Платья</li>
-              <li class="link blouses-tops">Блузы и топы</li>
-              <li class="link pants-skirts">Брюки и юбки</li>
-            </ul>
-            <div class="items">
-              <div class="item1">
-                <img src="./images/img_new-arriv_body_d.jpg" alt="Платье - боди">
-                <p>Платье - боди</p>
-                <p class="price">11 700 рублей</p>
+
+        <div class="new-arrival">
+          <div class="arrival-content">
+            <div class="layout">
+              <h2>Новое <span>поступление</span></h2>
+              <ul>
+                <li class="link dresses active">Платья</li>
+                <li class="link blouses-tops">Блузы и топы</li>
+                <li class="link pants-skirts">Брюки и юбки</li>
+              </ul>
+              <div class="items">
+                <div class="item1">
+                  <div class="heart link"></div>
+                  <img src="./images/img_new-arriv_body_d.jpg" alt="Платье - боди">
+                  <div class="desc">
+                    <p class="title link">Платье - боди</p>
+                    <p class="price"><span class="line"></span>11 700 рублей</p>
+                  </div>
+                </div>
+                <div class="item2">
+                  <div class="heart link"></div>
+                  <img src="./images/img_new-arriv_ethnic_d.jpg" alt="Этническое платье">
+                  <div class="desc">
+                    <p class="title link">Этническое платье</p>
+                    <p class="price"><span class="line"></span>7 800 рублей</p>
+                  </div>
+                </div>
+                <div class="item3">
+                  <div class="heart link"></div>
+                  <img src="./images/img_new-arriv_silk_d.jpg" alt="Шелковое платье с принтом">
+                  <div class="desc">
+                    <p class="title link">Шелковое платье с принтом</p>
+                    <p class="price"><span class="line"></span>4 800 рублей</p>
+                  </div>
+                </div>
               </div>
-              <div class="item2">
-                <img src="./images/img_new-arriv_ethnic_d.jpg" alt="Этническое платье">
-                <p>Платье - боди</p>
-                <p class="price">7 800 рублей</p>
+              <span class="link see-all">Смотреть все</span>
+            </div>
+            <div class="right-nav">
+            <span class="link page2">02</span>
+            <span class="line"></span>
+            <span class="link page2">01</span>
+            <span class="link page2">04</span>
+            <span class="link page2">05</span>
+            <span class="link page2">06</span>
+          </div>
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="about-content">
+            <div class="layout">
+              <h2>О бренде</h2>
+              <div class="top">
+                <img src="./images/img_about1_d.jpg" alt="О бренде">
+                <div class="description">
+                  <p>Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.</p>
+                  <p>Идея разработки свободных кроем моделей с яркими<br> дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность</p>
+                </div>
               </div>
-              <div class="item3">
-                <img src="./images/img_new-arriv_silk_d.jpg" alt="Шелковое платье с принтом">
-                <p>Платье - боди</p>
-                <p class="price">4 800 рублей</p>
+              <div class="bottom">
+                <img src="./images/img_about2_d.jpg" alt="О бренде">
+                <div class="description">
+                  <p>Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.</p>
+                </div>
               </div>
             </div>
-            <span class="link see-all">Смотреть все</span>
-          </div>
-          <div class="about">
-            <h2>О бренде</h2>
-            <div class="top">
-              <img src="./images/img_about1_d.jpg" alt="О бренде">
-              <div class="description">
-                <p>Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.</p>
-                <p>Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность</p>
+            <div class="right-nav">
+                <span class="link page2">03</span>
+                <span class="line"></span>
+                <span class="link page2">02</span>
+                <span class="link page2">01</span>
+                <span class="link page2">05</span>
+                <span class="link page2">06</span>
               </div>
+          </div>
+        </div>
+
+        <div class="blog">
+          <h2>Блог</h2>
+          <div class="items">
+            <div class="item1">
+              <span class="tag"></span>
+              <img src="./images/img_blog_costume_d.jpg" alt="Лучший выбор: костюмы’18">
+              <p class="headline">Лучший выбор: костюмы’18</p>
+              <p class="description">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
             </div>
-            <div class="bottom">
-              <img src="./images/img_about2_d.jpg" alt="О бренде">
-              <div class="description">
-                <p>Ключевыми моделями — идеально-скроенные пальто; рубашки, юбки и брюки с безупречной посадкой; а также платья и жилеты, вписывающиеся в контекст любого гардероба и, несмотря на яркую fashion-составляющую, сохраняющие свою актуальность в течение нескольких сезонов.</p>
-              </div>
+            <div class="item2">
+              <span class="tag">#новости</span>
+              <img src="./images/img_blog_accessory_d.jpg" alt="Аксессуары осень — зима ‘18">
+              <p class="headline">Аксессуары осень — зима ‘18</p>
+              <p class="description">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
+            </div>
+            <div class="item3">
+              <span class="tag">#советы</span>
+              <img src="./images/img_blog_look_d.jpg" alt="3 крутых образа для офиса">
+              <p class="headline">3 крутых образа для офиса</p>
+              <p class="description">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+            </div>
+            <div class="item4">
+              <span class="tag">#тенденции</span>
+              <img src="./images/img_blog_uv_d.jpg" alt="С чем носить ультрафиолет?">
+              <p class="headline">С чем носить ультрафиолет?</p>
+              <p class="description">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
             </div>
           </div>
-          <div class="blog">
-            <h2>Блог</h2>
-            <div class="items">
-              <div class="item1">
-                <span class="tag"></span>
-                <img src="./images/img_blog_costume_d.jpg" alt="Лучший выбор: костюмы’18">
-                <p class="headline">Лучший выбор: костюмы’18</p>
-                <p class="description">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
-              </div>
-              <div class="item2">
-                <span class="tag">#новости</span>
-                <img src="./images/img_blog_accessory_d.jpg" alt="Аксессуары осень — зима ‘18">
-                <p class="headline">Аксессуары осень — зима ‘18</p>
-                <p class="description">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
-              </div>
-              <div class="item3">
-                <span class="tag">#советы</span>
-                <img src="./images/img_blog_look_d.jpg" alt="3 крутых образа для офиса">
-                <p class="headline">3 крутых образа для офиса</p>
-                <p class="description">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
-              </div>
-              <div class="item4">
-                <span class="tag">#тенденции</span>
-                <img src="./images/img_blog_uv_d.jpg" alt="С чем носить ультрафиолет?">
-                <p class="headline">С чем носить ультрафиолет?</p>
-                <p class="description">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
-              </div>
-            </div>
-            <span class="link goto-blog">Перейти в блог</span>
-          </div>
-          <div class="subscribe">
-            <h3>Подпишись на новости I AM WOMEN и получите скидку 5% на следующую покупку</h3>
-            <form class="discount" action="index.html" method="post">
-              <input type="text" name="email" placeholder="Ваш E-mail">
-              <button class="send" type="button" name="Submit">Подписаться</button>
-              <p class="consent">Подписываясь на новости, вы даёте согласие на обработку персональных данных</p>
-            </form>
-          </div>
+          <span class="link goto-blog">Перейти в блог</span>
+        </div>
+        <div class="subscribe">
+          <h3>Подпишись на новости I AM WOMEN и получите скидку 5% на следующую покупку</h3>
+          <form class="discount" action="index.html" method="post">
+            <input type="text" name="email" placeholder="Ваш E-mail">
+            <button class="send" type="button" name="Submit">Подписаться</button>
+            <p class="consent">Подписываясь на новости, вы даёте согласие на обработку персональных данных</p>
+          </form>
         </div>
       </main>
       <footer id="footer">
@@ -271,4 +337,9 @@
       </footer>
   </div>
 </body>
+<script src="scripts/main.min.js"></script>
+<!-- <script type="text/javascript">
+var slides = document.querySelectorAll('div.slide');
+console.log(slides);
+</script> -->
 </html>
