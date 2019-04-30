@@ -1,0 +1,179 @@
+#footer {
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex: 1 1 1440px;
+    max-width: 1440px;
+
+    .footer-left {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex: 1 0 53.75%;
+      background-color: #decec5;
+
+      .catalog, .about-brand, .links {
+        display: flex;
+        flex-flow: column wrap;
+        min-width: 140px;
+        font: 600 18px Cormorant;
+        color: #342b2b;
+        letter-spacing: 0px;
+        line-height: 42px;
+      }
+
+      .catalog {
+        justify-content: space-between;
+        margin: 58px 0 0 130px;
+        min-width: 140px;
+        flex: 1;
+
+        p {
+          font: 600 18px Cormorant;
+          cursor: auto;
+          margin: 0 0 13px 0;
+        }
+      }
+
+      .about-brand {
+        justify-content: flex-start;
+        margin: 55px 0 0 25px;
+        min-width: 140px;
+        flex: 1;
+
+        p {
+          font: 500 18px Cormorant;
+          cursor: auto;
+          margin: 0 0 17px 0;
+        }
+      }
+
+      .links {
+        margin: 95px 0 0 45px;
+        min-width: 75px;
+        flex: 1;
+        align-self: baseline;
+      }
+    }
+
+    .footer-right {
+      display: flex;
+      flex-flow: column nowrap;
+      flex: 1 0 46.25%;
+      background-color: #ece5e1;
+      font: 600 18px Cormorant;
+      color: #342b2b;
+
+      .call {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        max-width: 315px;
+        margin: 58px 0 0 55px;
+
+        .number {
+          margin: -4px 0 0 0;
+        }
+      }
+
+      .join {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        max-width: 444px;
+        margin: 22px 0 0 54px;
+
+        ul {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          width: 232px;
+          font: 500 14px sans-serif;
+          margin: 5px 0 0 0;
+        }
+      }
+
+      .discount {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        max-width: 404px;
+        margin: 34px 0 0 55px;
+
+        form {
+          margin: 3px -1px 0 0;
+          font: 300 14px Cormorant;
+
+          input {
+            width: 193px;
+            border: none;
+            border-bottom: 1px solid #342b2b;
+            box-sizing: border-box;
+            padding: 5px 0 2px 0;
+            margin: -2px 0 0 0;
+            background-color: transparent;
+          }
+        }
+      }
+
+      .payment {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        max-width: 484px;
+        margin: 42px 0 0 54px;
+
+        .wrap {
+          display: flex;
+          flex-flow: column nowrap;
+          max-width: 275px;
+
+          ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            max-width: 196px;
+            margin: -8px 0 0 0;
+          }
+
+          .payment-other {
+            margin: 6px 0 0 0;
+            font: 600 14px Cormorant;
+
+            .other {
+              margin: 0 0 0 3px;
+              font: 800 14px Cormorant;
+              line-height: 18px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .copyright {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        max-width: 163px;
+        align-self: flex-end;
+        margin: 138px 134px 0 0;
+        font: 500 14px Cormorant;
+
+        span {
+          margin: -5px -1px 58px 0;
+          font-size: 19px;
+        }
+
+        p {
+          margin: 0 -8px 0 6px;
+        }
+      }
+    }
+  }
+}

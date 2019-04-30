@@ -73,7 +73,7 @@ h6 {font: 16px sans-serif;}
 /****************************************************************              PC              ***************************************************/
 @media (min-width: 978px) and (max-width: 1217px) {}
 /****************************************************************              TABLET              ***********************************************/
-@media (min-width: 768px) and (max-width: 977px) {
+@media (min-width: 764px) and (max-width: 1179px) {
 	.layout {
 		margin:0 auto;
 		position:relative;
@@ -81,7 +81,7 @@ h6 {font: 16px sans-serif;}
 	}
 }
 /****************************************************************              MOBILE              ***********************************************/
-@media (min-width: 320px) and (max-width:767px) {
+@media (min-width: 320px) and (max-width:763px) {
 	.layout {
 		width:100%;
 		padding:0;

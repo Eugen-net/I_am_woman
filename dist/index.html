@@ -28,32 +28,34 @@
           <div class="catalog">
             <p>Каталог</p>
             <ul>
-              <li class="link">Пальто</li>
-              <li class="link">Жилеты и жакеты</li>
-              <li class="link">Костюмы</li>
-              <li class="link">Трикотаж</li>
-              <li class="link">Платья</li>
-              <li class="link">Блузы и топы</li>
-              <li class="link">Футболки</li>
-              <li class="link">Юбки и брюки</li>
-              <li class="link">Аксессуары</li>
+              <li><span class="link">Пальто</span></li>
+              <li><span class="link">Жилеты и жакеты</span></li>
+              <li><span class="link">Костюмы</span></li>
+              <li><span class="link">Трикотаж</span></li>
+              <li><span class="link">Платья</span></li>
+              <li><span class="link">Блузы и топы</span></li>
+              <li><span class="link">Футболки</span></li>
+              <li><span class="link">Юбки и брюки</span></li>
+              <li><span class="link">Аксессуары</span></li>
             </ul>
           </div>
           <div class="about-brand">
             <p class="about">О бренде</p>
             <ul>
-              <li class="link">Оферта</li>
-              <li class="link">Оплата и доставка</li>
-              <li class="link">Возврат</li>
-              <li class="link">Контакты</li>
+              <li><span class="link">Оферта</span></li>
+              <li><span class="link">Оплата и доставка</span></li>
+              <li><span class="link">Возврат</span></li>
+              <li><span class="link">Контакты</span></li>
+              <li><span class="link t">Отзывы</span></li>
             </ul>
           </div>
           <ul class="links">
-            <li class="link">Sale</li>
-            <li class="link">New</li>
-            <li class="link">Looks</li>
-            <li class="link">Блог</li>
-            <li class="link">Streetstyle</li>
+            <li><span class="link">Sale</span></li>
+            <li><span class="link">New</span></li>
+            <li><span class="link">Looks</span></li>
+            <li><span class="link">Блог</span></li>
+            <li><span class="link">Streetstyle</span></li>
+            <li><span class="link t">Войти в личный кабинет</span></li>
           </ul>
           <div class="personal">
             <form class="search" action="index.html" method="post">
@@ -62,9 +64,12 @@
             <span class="link cabinet">Войти в личный кабинет</span>
             <span class="link feedback">Отзывы</span>
           </div>
+          <form class="search t" action="index.html" method="post">
+            <input type="text" name="search" placeholder="Найти на сайте">
+          </form>
           <div class="close-menu" onclick="menuShowHide()"></div>
         </div>
-        <div class="header-content">
+        <div class="header-content" id="1">
           <div class="left-menu">
             <div class="menu-button" onclick="menuShowHide()">
               <span class="top"></span>
@@ -138,12 +143,12 @@
               </ul>
           </div>
           <div class="right-nav">
-            <span class="link page1">01</span>
+            <a class="page1" href="#1">01</a>
             <span class="line"></span>
-            <span class="link page1">02</span>
-            <span class="link page1">04</span>
-            <span class="link page1">05</span>
-            <span class="link page1">06</span>
+            <a class="page1" href="#2">02</a>
+            <a class="page1" href="#4">04</a>
+            <a class="page1" href="#5">05</a>
+            <a class="page1" href="#6">06</a>
           </div>
         </div>
       </header>
@@ -152,7 +157,7 @@
         <div class="new-arrival">
           <div class="arrival-content">
             <div class="layout">
-              <h2>Новое <span>поступление</span></h2>
+              <h2 id="2">Новое <span>поступление</span></h2>
               <ul>
                 <li class="link dresses active">Платья</li>
                 <li class="link blouses-tops">Блузы и топы</li>
@@ -161,6 +166,11 @@
               <div class="items">
                 <div class="item1">
                   <div class="heart link"></div>
+                  <div class="arrows">
+                    <span class="left link"></span>
+                    <span class="separator"></span>
+                    <span class="right link"></span>
+                  </div>
                   <img src="./images/img_new-arriv_body_d.jpg" alt="Платье - боди">
                   <div class="desc">
                     <p class="title link">Платье - боди</p>
@@ -169,6 +179,11 @@
                 </div>
                 <div class="item2">
                   <div class="heart link"></div>
+                  <div class="arrows">
+                    <span class="left link"></span>
+                    <span class="separator"></span>
+                    <span class="right link"></span>
+                  </div>
                   <img src="./images/img_new-arriv_ethnic_d.jpg" alt="Этническое платье">
                   <div class="desc">
                     <p class="title link">Этническое платье</p>
@@ -177,6 +192,11 @@
                 </div>
                 <div class="item3">
                   <div class="heart link"></div>
+                  <div class="arrows">
+                    <span class="left link"></span>
+                    <span class="separator"></span>
+                    <span class="right link"></span>
+                  </div>
                   <img src="./images/img_new-arriv_silk_d.jpg" alt="Шелковое платье с принтом">
                   <div class="desc">
                     <p class="title link">Шелковое платье с принтом</p>
@@ -187,17 +207,17 @@
               <span class="link see-all">Смотреть все</span>
             </div>
             <div class="right-nav">
-            <span class="link page2">02</span>
+            <a class="page2" href="#2">02</a>
             <span class="line"></span>
-            <span class="link page2">01</span>
-            <span class="link page2">04</span>
-            <span class="link page2">05</span>
-            <span class="link page2">06</span>
+            <a class="page2" href="#1">01</a>
+            <a class="page2" href="#4">04</a>
+            <a class="page2" href="#5">05</a>
+            <a class="page2" href="#6">06</a>
           </div>
           </div>
         </div>
 
-        <div class="about">
+        <div class="about" id="3">
           <div class="about-content">
             <div class="layout">
               <h2>О бренде</h2>
@@ -216,18 +236,28 @@
               </div>
             </div>
             <div class="right-nav">
-                <span class="link page2">03</span>
+                <a class="page3" href="#3">03</a>
                 <span class="line"></span>
-                <span class="link page2">02</span>
-                <span class="link page2">01</span>
-                <span class="link page2">05</span>
-                <span class="link page2">06</span>
+                <a class="page3" href="#2">02</a>
+                <a class="page3" href="#1">01</a>
+                <a class="page3" href="#5">05</a>
+                <a class="page3" href="#6">06</a>
               </div>
           </div>
         </div>
 
         <div class="blog">
-          <h2>Блог</h2>
+          <h2  id="4">Блог</h2>
+          <div class="nav">
+            <div class="counter">
+              <span class="current">03</span>
+              <span class="separator">/</span>
+              <span class="total">12</span>
+            </div>
+            <div class="line">
+              <span class="current-position"></span>
+            </div>
+          </div>
           <div class="items">
             <div class="wrap">
               <div class="item item1">
@@ -257,25 +287,50 @@
 
 <!-- ----TEST---------------------------------------------------------------------------------------------------------------------- -->
 
-            <div class="item item1">
+            <div class="item item5">
               <span class="tag link">#</span>
               <img src="./images/img_blog_costume_d.jpg" alt="Лучший выбор: костюмы’18">
               <p class="headline">Лучший выбор: костюмы’18</p>
               <p class="description">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
             </div>
-            <div class="item item2">
+            <div class="item item6">
               <span class="tag link">#новости</span>
               <img src="./images/img_blog_accessory_d.jpg" alt="Аксессуары осень — зима ‘18">
               <p class="headline">Аксессуары осень — зима ‘18</p>
               <p class="description">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
             </div>
-            <div class="item item3">
+            <div class="item item7">
               <span class="tag link">#советы</span>
               <img src="./images/img_blog_look_d.jpg" alt="3 крутых образа для офиса">
               <p class="headline">3 крутых образа для офиса</p>
               <p class="description">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
             </div>
-            <div class="item item4">
+            <div class="item item8">
+              <span class="tag link">#тенденции</span>
+              <img src="./images/img_blog_uv_d.jpg" alt="С чем носить ультрафиолет?">
+              <p class="headline">С чем носить ультрафиолет?</p>
+              <p class="description">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
+            </div>
+
+            <div class="item item9">
+              <span class="tag link">#</span>
+              <img src="./images/img_blog_costume_d.jpg" alt="Лучший выбор: костюмы’18">
+              <p class="headline">Лучший выбор: костюмы’18</p>
+              <p class="description">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
+            </div>
+            <div class="item item10">
+              <span class="tag link">#новости</span>
+              <img src="./images/img_blog_accessory_d.jpg" alt="Аксессуары осень — зима ‘18">
+              <p class="headline">Аксессуары осень — зима ‘18</p>
+              <p class="description">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные <br> украшения помогут сделать лук более гармоничным <br> и стильным, ну а неправильно — испортят ваш лук</p>
+            </div>
+            <div class="item item11">
+              <span class="tag link">#советы</span>
+              <img src="./images/img_blog_look_d.jpg" alt="3 крутых образа для офиса">
+              <p class="headline">3 крутых образа для офиса</p>
+              <p class="description">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного <br> дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+            </div>
+            <div class="item item12">
               <span class="tag link">#тенденции</span>
               <img src="./images/img_blog_uv_d.jpg" alt="С чем носить ультрафиолет?">
               <p class="headline">С чем носить ультрафиолет?</p>
@@ -289,17 +344,19 @@
           <span class="link goto-blog">Перейти в блог</span>
         </div>
 
-        <div class="subscribe">
-          <h3>Подпишись на новости I AM WOMEN и получите скидку 5% на следующую покупку</h3>
-          <form class="discount" action="index.html" method="post">
-            <input type="text" name="email" placeholder="Ваш E-mail">
-            <button class="send" type="button" name="Submit">Подписаться</button>
-            <p class="consent">Подписываясь на новости, вы даёте согласие на обработку персональных данных</p>
-          </form>
+        <div class="layout">
+          <div class="subscribe"  id="5">
+            <h3>Подпишись на новости I AM WOMEN<br> и получите скидку 5% на следующую покупку</h3>
+            <form class="discount" action="index.html" method="post">
+              <input type="text" name="email" placeholder="Ваш E-mail">
+              <button class="send" type="button" name="Submit">Подписаться</button>
+              <p class="consent">Подписываясь на новости, вы даёте согласие на обработку персональных данных</p>
+            </form>
+          </div>
         </div>
       </main>
       <footer id="footer">
-        <div class="layout">
+        <div class="wrap" id="6">
           <div class="footer-left">
             <div class="catalog">
               <p>Каталог</p>
@@ -334,7 +391,7 @@
           <div class="footer-right">
             <div class="call">
               <p>Звонок с сайта:</p>
-              <p>+7 495 792 93 12</p>
+              <p class="number">+7 495 792 93 12</p>
             </div>
             <div class="join">
               <p>Присоединяйся к нам:</p>
@@ -352,13 +409,15 @@
             </div>
             <div class="payment">
               <p>Принимаем к оплате:</p>
-              <ul>
-                <li class="link"><img src="./images/ico_visa_d.png" alt="Visa"></li>
-                <li class="link"><img src="./images/ico_master_d.png" alt="MasterCard"></li>
-                <li class="link"><img src="./images/ico_pp_d.png" alt="PayPal"></li>
-              </ul>
-              <div class="payment-other">
-                <p>Вы можете оплатить наличными при получении либо выбрать другой<span class="link">способ оплаты</span></p>
+              <div class="wrap">
+                <ul>
+                  <li class="link"><img src="./images/ico_visa_d.png" alt="Visa"></li>
+                  <li class="link"><img src="./images/ico_master_d.png" alt="MasterCard"></li>
+                  <li class="link"><img src="./images/ico_pp_d.png" alt="PayPal"></li>
+                </ul>
+                <div class="payment-other">
+                  <p>Вы можете оплатить наличными при получении либо выбрать другой<span class="link other">способ оплаты</span></p>
+                </div>
               </div>
             </div>
             <div class="copyright">
