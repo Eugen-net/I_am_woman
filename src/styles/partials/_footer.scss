@@ -177,3 +177,160 @@
     }
   }
 }
+
+// @media (min-width: 764px) and (max-width: 1179px) {
+@media (min-width: 764px) and (max-width: 1000px) {
+
+  #footer {
+    max-width: 764px;
+
+    .wrap {
+      flex: 1 1 764px;
+      max-width: 764px;
+
+      .footer-left {
+        display: none;
+      }
+
+      .footer-right {
+        font: 600 16px Cormorant;
+
+        .call {
+          max-width: 303px;
+          margin: 37px 0 0 19px;
+
+          .number {
+            margin: -3px 0 0 0;
+          }
+        }
+
+        .join {
+          max-width: 438px;
+          margin: 11px 0 0 19px;
+
+          ul {
+            width: 232px;
+            font: 500 14px sans-serif;
+            margin: 3px 0 0 0;
+          }
+        }
+
+        .discount {
+          display: none;
+        }
+
+        .payment {
+          max-width: 444px;
+          margin: 13px 0 0 19px;
+
+          .wrap {
+            max-width: 275px;
+
+            ul {
+              max-width: 150px;
+              margin: 5px 0 0 39px;
+            }
+
+            .payment-other {
+              margin: 15px 0 0 38px;
+              font: 600 12px Cormorant;
+
+              .other {
+                font: 800 12px Cormorant;
+                line-height: 16px;
+              }
+            }
+          }
+        }
+
+        .copyright {
+          margin: 64px 28px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width:763px) {
+
+  .d {
+    display: none;
+  }
+
+  .t {
+    display: none;
+  }
+
+  .m {
+    display: inline;
+  }
+
+  #wrapper {
+    width: 320px;
+    margin: 0 auto;
+
+    #footer {
+      max-width: 320px;
+
+      .wrap {
+        flex: 1 1 320px;
+        max-width: 320px;
+
+        .footer-left {
+          display: none;
+        }
+
+        .footer-right {
+          font: 600 16px Cormorant;
+
+          .call {
+            max-width: 235px;
+            margin: 33px 0 0 15px;
+
+            .number {
+              margin: -3px 0 0 0;
+            }
+          }
+
+          .join {
+            max-width: 208px;
+            margin: 12px 0 0 16px;
+
+            p {
+              display: none;
+            }
+
+            p.m {
+              display: block;
+            }
+
+            ul {
+              flex-flow: column nowrap;
+              width: 70px;
+              height: 80px;
+              font: 500 14px sans-serif;
+              margin: 2px 0 0 0;
+              letter-spacing: 0.5px;
+            }
+          }
+
+          .discount {
+            display: none;
+          }
+
+          .payment {
+            display: none;
+          }
+
+          .copyright {
+            margin: 50px 23px 0 0;
+
+            span {
+              margin: -5px -1px 25px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

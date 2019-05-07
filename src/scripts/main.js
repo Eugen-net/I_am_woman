@@ -46,3 +46,36 @@ btn_prev.onclick = function() {
   slides[i].style.display = 'block';
   slide_number.innerHTML = '0'+(i+1);
 };
+
+
+var btn_next_arriv = document.querySelector('.next_arriv');
+var btn_prev_arriv = document.querySelector('.prev_arriv');
+
+var item_arriv = document.querySelectorAll('div.item_arriv');
+i = 0;
+
+btn_next_arriv.onclick = function() {
+  item_arriv[i].style.display = 'none';
+  i++;
+  console.log(i);
+  console.log(item_arriv.length);
+
+  if (i >= item_arriv.length) {
+    i = 0;
+  }
+
+  item_arriv[i].style.display = 'block';
+};
+
+btn_prev_arriv.onclick = function() {
+  item_arriv[i].style.display = 'none';
+  i--;
+  console.log(i);
+  console.log(item_arriv.length);
+
+  if (i < 0) {
+    i = item_arriv.length - 1;
+  }
+
+  item_arriv[i].style.display = 'block';
+};

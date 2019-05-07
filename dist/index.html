@@ -25,6 +25,11 @@
             <p>Распродажа<span>SS’18</span></p>
             <span class="line"></span>
           </div>
+          <div class="menu-button m" onclick="menuShowHide()">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
           <div class="catalog">
             <p>Каталог</p>
             <ul>
@@ -46,7 +51,9 @@
               <li><span class="link">Оплата и доставка</span></li>
               <li><span class="link">Возврат</span></li>
               <li><span class="link">Контакты</span></li>
-              <li><span class="link t">Отзывы</span></li>
+              <li><span class="link t m">Отзывы</span></li>
+              <li><span class="link m">New</span></li>
+              <li><span class="link m">Sale</span></li>
             </ul>
           </div>
           <ul class="links">
@@ -79,6 +86,11 @@
             <p>Распродажа<span>SS’18</span></p>
             <span class="line"></span>
           </div>
+          <div class="menu-button m" onclick="menuShowHide()">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
           <div class="wrap">
             <div class="top-header">
               <h1 class="logo">
@@ -104,7 +116,9 @@
                     <p class="price">9 900 рублей</p>
                     <span class="line"></span>
                   </div>
-                  <img src="./images/img_new-collect_product1_d.jpg" alt="Хлопковое платье в полоску">
+                  <img class="d" src="./images/img_new-collect_product1_d.jpg" alt="Хлопковое платье в полоску">
+                  <img class="t" src="./images/img_new-collect_product1_t.jpg" alt="Хлопковое платье в полоску">
+                  <img class="m" src="./images/img_new-collect_product1_m.jpg" alt="Хлопковое платье в полоску">
                 </div>
                 <div class="slide slide2">
                   <div class="bg"></div>
@@ -113,7 +127,9 @@
                     <p class="price">9 900 рублей</p>
                     <span class="line"></span>
                   </div>
-                  <img src="./images/img_new-collect_product2_d.jpg" alt="Спортивный желтый костюм">
+                  <img class="d" src="./images/img_new-collect_product2_d.jpg" alt="Спортивный желтый костюм">
+                  <img class="t" src="./images/img_new-collect_product2_t.jpg" alt="Спортивный желтый костюм">
+                  <img class="m" src="./images/img_new-collect_product2_m.jpg" alt="Спортивный желтый костюм">
                 </div>
                 <div class="slide slide3">
                   <div class="bg"></div>
@@ -122,7 +138,9 @@
                     <p class="price">9 900 рублей</p>
                     <span class="line"></span>
                   </div>
-                  <img src="./images/img_new-collect_product3_d.jpg" alt="Платье — халат со стразами">
+                  <img class="d" src="./images/img_new-collect_product3_d.jpg" alt="Платье — халат со стразами">
+                  <img class="t" src="./images/img_new-collect_product3_t.jpg" alt="Платье — халат со стразами">
+                  <img class="m" src="./images/img_new-collect_product3_m.jpg" alt="Платье — халат со стразами">
                 </div>
                 <div class="nav">
                   <div class="wrap">
@@ -137,9 +155,9 @@
               </div>
             </div>
             <ul class="social">
-                <li class="link fb">Facebook</li>
-                <li class="link yt">Youtube</li>
-                <li class="link vk">Vkontakte</li>
+                <li class="fb"><span class="link">Facebook</span></li>
+                <li class="yt"><span class="link">Youtube</span></li>
+                <li class="vk"><span class="link">Vkontakte</span></li>
               </ul>
           </div>
           <div class="right-nav">
@@ -159,52 +177,63 @@
             <div class="layout">
               <h2 id="2">Новое <span>поступление</span></h2>
               <ul>
-                <li class="link dresses active">Платья</li>
-                <li class="link blouses-tops">Блузы и топы</li>
-                <li class="link pants-skirts">Брюки и юбки</li>
+                <li class="dresses active"><span class="link">Платья</span></li>
+                <li class="blouses-tops"><span class="link">Блузы и топы</span></li>
+                <li class="pants-skirts"><span class="link">Брюки и юбки</span></li>
               </ul>
+              <div class="nav m">
+                <span class="prev_arriv link"></span>
+                <span class="next_arriv link"></span>
+              </div>
               <div class="items">
-                <div class="item1">
+                <div class="item_arriv item1">
                   <div class="heart link"></div>
                   <div class="arrows">
                     <span class="left link"></span>
                     <span class="separator"></span>
                     <span class="right link"></span>
                   </div>
-                  <img src="./images/img_new-arriv_body_d.jpg" alt="Платье - боди">
+                  <img class="d" src="./images/img_new-arriv_body_d.jpg" alt="Платье - боди">
+                  <img class="t" src="./images/img_new-arriv_body_t.jpg" alt="Платье - боди">
+                  <img class="m" src="./images/img_new-arriv_body_m.jpg" alt="Платье - боди">
                   <div class="desc">
-                    <p class="title link">Платье - боди</p>
+                    <p class="title"><span class="link">Платье - боди</span></p>
                     <p class="price"><span class="line"></span>11 700 рублей</p>
                   </div>
                 </div>
-                <div class="item2">
+                <div class="item_arriv item2">
                   <div class="heart link"></div>
                   <div class="arrows">
                     <span class="left link"></span>
                     <span class="separator"></span>
                     <span class="right link"></span>
                   </div>
-                  <img src="./images/img_new-arriv_ethnic_d.jpg" alt="Этническое платье">
+                  <img class="d" src="./images/img_new-arriv_ethnic_d.jpg" alt="Этническое платье">
+                  <img class="t" src="./images/img_new-arriv_ethnic_t.jpg" alt="Этническое платье">
+                  <img class="m" src="./images/img_new-arriv_ethnic_m.jpg" alt="Этническое платье">
                   <div class="desc">
-                    <p class="title link">Этническое платье</p>
+                    <p class="title"><span class="link">Этническое платье</span></p>
                     <p class="price"><span class="line"></span>7 800 рублей</p>
                   </div>
                 </div>
-                <div class="item3">
+                <div class="item_arriv item3">
                   <div class="heart link"></div>
                   <div class="arrows">
                     <span class="left link"></span>
                     <span class="separator"></span>
                     <span class="right link"></span>
                   </div>
-                  <img src="./images/img_new-arriv_silk_d.jpg" alt="Шелковое платье с принтом">
+                  <img class="d" src="./images/img_new-arriv_silk_d.jpg" alt="Шелковое платье с принтом">
+                  <img class="t" src="./images/img_new-arriv_silk_t.jpg" alt="Шелковое платье с принтом">
+                  <img class="m" src="./images/img_new-arriv_silk_m.jpg" alt="Шелковое платье с принтом">
                   <div class="desc">
-                    <p class="title link">Шелковое платье с принтом</p>
+                    <p class="title d"><span class="link">Шелковое платье с принтом</span></p>
+                    <p class="title t"><span class="link">Шелковое платье</span></p>
                     <p class="price"><span class="line"></span>4 800 рублей</p>
                   </div>
                 </div>
               </div>
-              <span class="link see-all">Смотреть все</span>
+              <span class="see-all"><span class="link">Смотреть все</span></span>
             </div>
             <div class="right-nav">
             <a class="page2" href="#2">02</a>
@@ -222,14 +251,19 @@
             <div class="layout">
               <h2>О бренде</h2>
               <div class="top">
-                <img src="./images/img_about1_d.jpg" alt="О бренде">
+                <img class="d" src="./images/img_about1_d.jpg" alt="О бренде">
+                <img class="t" src="./images/img_about1_t.jpg" alt="О бренде">
+                <img class="m" src="./images/img_about1_m.jpg" alt="О бренде">
                 <div class="description">
                   <p>Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.</p>
-                  <p>Идея разработки свободных кроем моделей с яркими<br> дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность</p>
+                  <p class="second">Идея разработки свободных кроем моделей с яркими<br> дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность</p>
+                  <p class="second_m m">Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех <br> и имиджевую популярность</p>
+                  <p class="third m">Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой <br> гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.</p>
                 </div>
               </div>
               <div class="bottom">
-                <img src="./images/img_about2_d.jpg" alt="О бренде">
+                <img class="d" src="./images/img_about2_d.jpg" alt="О бренде">
+                <img class="t" src="./images/img_about2_t.jpg" alt="О бренде">
                 <div class="description">
                   <p>Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.</p>
                 </div>
@@ -250,9 +284,11 @@
           <h2  id="4">Блог</h2>
           <div class="nav">
             <div class="counter">
-              <span class="current">03</span>
+              <span class="current d">03</span>
+              <span class="current t">02</span>
               <span class="separator">/</span>
-              <span class="total">12</span>
+              <span class="total d">12</span>
+              <span class="total t">4</span>
             </div>
             <div class="line">
               <span class="current-position"></span>
@@ -261,33 +297,49 @@
           <div class="items">
             <div class="wrap">
               <div class="item item1">
-                <span class="tag link">#</span>
-                <img src="./images/img_blog_costume_d.jpg" alt="Лучший выбор: костюмы’18">
+                <span class="tag link">#советы</span>
+                <img class="d" src="./images/img_blog_costume_d.jpg" alt="Лучший выбор: костюмы’18">
+                <img class="t" src="./images/img_blog_costume_t.jpg" alt="Лучший выбор: костюмы’18">
+                <img class="m" src="./images/img_blog_costume_m.jpg" alt="Лучший выбор: костюмы’18">
                 <p class="headline">Лучший выбор: костюмы’18</p>
-                <p class="description">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
+                <p class="description d">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
+                <p class="description t">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
+                <p class="description m">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
               </div>
               <div class="item item2">
                 <span class="tag link">#новости</span>
-                <img src="./images/img_blog_accessory_d.jpg" alt="Аксессуары осень — зима ‘18">
+                <img class="d" src="./images/img_blog_accessory_d.jpg" alt="Аксессуары осень — зима ‘18">
+                <img class="t" src="./images/img_blog_accessory_t.jpg" alt="Аксессуары осень — зима ‘18">
+                <img class="m" src="./images/img_blog_accessory_m.jpg" alt="Аксессуары осень — зима ‘18">
                 <p class="headline">Аксессуары осень — зима ‘18</p>
-                <p class="description">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные <br> украшения помогут сделать лук более гармоничным <br> и стильным, ну а неправильно — испортят ваш лук</p>
+                <p class="description d">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные <br> украшения помогут сделать лук более гармоничным <br> и стильным, ну а неправильно — испортят ваш лук</p>
+                <p class="description t">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, <br> ну а неправильно — испортят ваш лук</p>
+                <p class="description m">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, <br> ну а неправильно — испортят <br> ваш лук</p>
               </div>
               <div class="item item3">
                 <span class="tag link">#советы</span>
-                <img src="./images/img_blog_look_d.jpg" alt="3 крутых образа для офиса">
+                <img class="d" src="./images/img_blog_look_d.jpg" alt="3 крутых образа для офиса">
+                <img class="t" src="./images/img_blog_look_t.jpg" alt="3 крутых образа для офиса">
+                <img class="m" src="./images/img_blog_look_m.jpg" alt="3 крутых образа для офиса">
                 <p class="headline">3 крутых образа для офиса</p>
-                <p class="description">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного <br> дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+                <p class="description d">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного <br> дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+                <p class="description t">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+                <p class="description m">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
               </div>
               <div class="item item4">
                 <span class="tag link">#тенденции</span>
-                <img src="./images/img_blog_uv_d.jpg" alt="С чем носить ультрафиолет?">
+                <img class="d" src="./images/img_blog_uv_d.jpg" alt="С чем носить ультрафиолет?">
+                <img class="t" src="./images/img_blog_uv_t.jpg" alt="С чем носить ультрафиолет?">
+                <img class="m" src="./images/img_blog_uv_m.jpg" alt="С чем носить ультрафиолет?">
                 <p class="headline">С чем носить ультрафиолет?</p>
-                <p class="description">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
+                <p class="description d">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
+                <p class="description t">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
+                <p class="description m">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
               </div>
 
 <!-- ----TEST---------------------------------------------------------------------------------------------------------------------- -->
 
-            <div class="item item5">
+            <!-- <div class="item item5">
               <span class="tag link">#</span>
               <img src="./images/img_blog_costume_d.jpg" alt="Лучший выбор: костюмы’18">
               <p class="headline">Лучший выбор: костюмы’18</p>
@@ -335,13 +387,27 @@
               <img src="./images/img_blog_uv_d.jpg" alt="С чем носить ультрафиолет?">
               <p class="headline">С чем носить ультрафиолет?</p>
               <p class="description">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
-            </div>
+            </div> -->
 
 <!-- ----TEST---------------------------------------------------------------------------------------------------------------------- -->
 
             </div>
           </div>
-          <span class="link goto-blog">Перейти в блог</span>
+          <div class="nav_m m">
+            <div class="counter">
+              <span class="current d">03</span>
+              <span class="current t">02</span>
+              <span class="current m">01</span>
+              <span class="separator">/</span>
+              <span class="total d">12</span>
+              <span class="total t">4</span>
+              <span class="total m">4</span>
+            </div>
+            <div class="line">
+              <span class="current-position"></span>
+            </div>
+          </div>
+          <span class="goto-blog"><span class="link">Перейти в блог</span></span>
         </div>
 
         <div class="layout">
@@ -395,6 +461,7 @@
             </div>
             <div class="join">
               <p>Присоединяйся к нам:</p>
+              <p class="m">Присоединяйся:</p>
               <ul>
                 <li class="link">Facebook</li>
                 <li class="link">Youtube</li>
@@ -411,12 +478,16 @@
               <p>Принимаем к оплате:</p>
               <div class="wrap">
                 <ul>
-                  <li class="link"><img src="./images/ico_visa_d.png" alt="Visa"></li>
-                  <li class="link"><img src="./images/ico_master_d.png" alt="MasterCard"></li>
-                  <li class="link"><img src="./images/ico_pp_d.png" alt="PayPal"></li>
+                  <li class="link d"><img src="./images/ico_visa_d.png" alt="Visa"></li>
+                  <li class="link t"><img src="./images/ico_visa_t.png" alt="Visa"></li>
+                  <li class="link d"><img src="./images/ico_master_d.png" alt="MasterCard"></li>
+                  <li class="link t"><img src="./images/ico_master_t.png" alt="MasterCard"></li>
+                  <li class="link d"><img src="./images/ico_pp_d.png" alt="PayPal"></li>
+                  <li class="link t"><img src="./images/ico_pp_t.png" alt="PayPal"></li>
                 </ul>
                 <div class="payment-other">
-                  <p>Вы можете оплатить наличными при получении либо выбрать другой<span class="link other">способ оплаты</span></p>
+                  <p class="d">Вы можете оплатить наличными при получении либо выбрать другой<span class="link other">способ оплаты</span></p>
+                  <p class="t">Вы можете оплатить наличными при<br> получении либо выбрать другой<span class="link other">способ оплаты</span></p>
                 </div>
               </div>
             </div>
