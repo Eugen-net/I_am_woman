@@ -179,20 +179,25 @@
 }
 
 // @media (min-width: 764px) and (max-width: 1179px) {
-@media (min-width: 764px) and (max-width: 1000px) {
+@media screen and (max-width:$max-width-tablet) {
 
   #footer {
-    max-width: 764px;
+    // max-width: 764px;
+    flex: 1 1 1179px;
+    max-width: 1179px;
+    background-color: #ece5e1;
 
     .wrap {
-      flex: 1 1 764px;
-      max-width: 764px;
+      flex: 1 1 1179px;
+      max-width: 1179px;
 
       .footer-left {
         display: none;
       }
 
       .footer-right {
+        max-width: 764px;
+        margin: 0 auto;
         font: 600 16px Cormorant;
 
         .call {
@@ -251,7 +256,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width:763px) {
+@media screen and (max-width:$max-width-mobile) {
 
   .d {
     display: none;

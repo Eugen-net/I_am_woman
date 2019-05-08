@@ -799,7 +799,7 @@ h3 {
 }
 
 // @media (min-width: 764px) and (max-width: 1179px) {
-@media (min-width: 764px) and (max-width: 1000px) {
+@media screen and (max-width:$max-width-tablet) {
 
   .d {
     display: none;
@@ -1234,7 +1234,7 @@ h3 {
   }
 }
 
-@media (min-width: 320px) and (max-width:763px) {
+@media screen and (max-width:$max-width-mobile) {
 
   .d {
     display: none;
